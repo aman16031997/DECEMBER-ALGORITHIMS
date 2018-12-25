@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int n;
+    
+    int sum=0;
+  int c1=0;
+    scanf("%d",&n);
+  int num=n;
+  
+  
+   while(n>0)
+   {
+    int x=n%10;
+     sum=sum+x;
+        c1++;
+        n=n/10;
+   }
+  
+    int y=c1/2;
+  int i=0;
+  int s=0;
+ 
+while(i<y)
+ {
+   int z=num%10;
+    s=s+z;
+   num=num/10;
+  i++;
+ }
+ 
+int rem=sum-s;
+  if(rem==s)
+    printf("Lucky number");
+  else
+    printf("Not a lucky number");
+    return 0;
+}
+
+	
